@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Survey About React
+            </h1>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">What technology are you passionate about ?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev">Self-driving car
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Virtual reality and virtual interaction
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Artificial intelligence
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering">High quality online training
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">What position are you studying or working in ?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">Did you know about the React tools ?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Don't know.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Know little.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Know a lot.
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">What do you thing about the strengths of the React tool?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev">Reactjs is incredibly efficient: Reactjs creates its own virtual DOM.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Reactjs makes writing JS code easier.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  It has a variety of development tools.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Server layer rendering.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Working with interface testing.
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> High performance for applications with constantly changing data, easy for maintenance and error correction.
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+             <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">If you choose, will you choose the react tool as a companion ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio">Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >No
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="button" id="btn" value="Submit"/>
+                <script language="javascript">
+                    var button = document.getElementById("btn");
+                    button.onclick = function(){
+                        alert("Thank you very much !!!");
+                    }
+                </script>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
